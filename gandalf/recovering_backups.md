@@ -1,4 +1,4 @@
-#Recovering backups
+# Recovering backups
 
 Backups of the old yoomee office servers - pippin and dev1 - were made and are stored on gandalf. To recover files from it:
 
@@ -14,7 +14,7 @@ ssh root@gandalf.yoomee.com
  scp root@gandalf.yoomee.com:/home/yoomee/backup/whatever_you_want .
 ```
 
-##If you're recovering a git repository
+## If you're recovering a git repository
 If it's a git repostitory, then you can clone directly from the saved file.
 For example, to clone yoomee-moderation
 
