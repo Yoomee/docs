@@ -1,6 +1,6 @@
 # Gandalf
 
-![Gandalf image](http://img1.wikia.nocookie.net/__cb20121003055423/lotr/images/thumb/4/4f/Gandalf_the_White_returns.png/640px-Gandalf_the_White_returns.png)
+![Gandalf image](https://gitlab.yoomee.com/yoomee/docs/raw/master/assets/images/gandalf.png)
 
 Gandalf is a DigitalOcean droplet. Log in at [digitalocean.com](https://www.digitalocean.com/) with `developers@yoomee.com` and password key `DIGITALOCEAN`.
 
