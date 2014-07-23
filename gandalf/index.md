@@ -16,11 +16,11 @@ A copy of the GitLab nginx config is in [nginx.gitlab.conf](nginx.gitlab.conf).
 
 ## Gem server
 
-The gem server at [gems.yoomee.com](https://gems.yoomee.com) is hosted on Gandalf. We have a Yoomee fork of the Geminabox gem [here](https://gitlab.yoomee.com/yoomee/geminabox).x
+The gem server at [gems.yoomee.com](https://gems.yoomee.com) is hosted on Gandalf in `/home/gems`. The server config files are in the [geminabox-server](https://gitlab.yoomee.com/yoomee/geminabox-server/tree/master) repo and we have a Yoomee fork of the Geminabox gem [here](https://gitlab.yoomee.com/yoomee/geminabox/tree/master).
 
 A copy of the Geminabox nginx config is in [nginx.geminabox.conf](nginx.geminabox.conf).
 
 
-## Further docs
+## Other docs
 * [Recovering old projects that aren't on Gitlab](recovering_backups.md)
 * [Documentation of the initial setup process of Gandalf](initial_setup_and_migration_from_pippin.md)
