@@ -1,6 +1,6 @@
 # Recovering backups
 
-Backups of the old yoomee office servers - pippin and dev1 - were made and are stored on gandalf. To recover files from it:
+Backups of the old Yoomee office git server - dev1 - were made and are stored on gandalf. To recover files from it:
 
 * ssh to the server and find what you want
 
