@@ -110,7 +110,23 @@ We use ImageMagick to mess with images:
 brew install imagemagick
 ```
 
+## Install Thinking Sphinx
+
+Thinking Sphinx is a concise and easy-to-use Ruby library that connects ActiveRecord to the Sphinx search daemon, managing configuration and searching.
+
+1. Download binaries from [here](https://gitlab.yoomee.com/yoomee/docs/raw/master/assets/binaries/sphinx_binaries.zip).
+2. Unzip and move to /usr/local/bin
+
+
 Congrats! You're done.
+
+## Other server tools
+
+Some optional extras that you will probably need one day, so you may as well install now.
+
+##### PostgreSQL
+
+The easiest way to get started with PostgreSQL on the Mac is here: http://postgresapp.com/
 
 ## Other local tools
 
@@ -127,12 +143,3 @@ It's recommended you use Gitx for managing git commits.
 
 1. Use _GitX-dev (rowanj fork)_ from http://rowanj.github.io/gitx/
 2. Enable Terminal Usage from the GitX application menu.
-
-
-## Other server tools
-
-Some optional extras that you might needs.
-
-##### PostgreSQL
-
-The easiest way to get started with PostgreSQL on the Mac is here: http://postgresapp.com/
