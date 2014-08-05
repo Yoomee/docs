@@ -112,18 +112,27 @@ brew install imagemagick
 
 Congrats! You're done.
 
-## Other tools
+## Other local tools
 
 You might want some of these tools, or choose your own alternatives.
 
-### Atom Text Editor
+##### Atom Text Editor
 
 Most of the dev team are using https://atom.io/ because David says so. It's very cool too.
 
 
-### Gitx
+##### Gitx
 
 It's recommended you use Gitx for managing git commits.
 
 1. Use _GitX-dev (rowanj fork)_ from http://rowanj.github.io/gitx/
 2. Enable Terminal Usage from the GitX application menu.
+
+
+## Other server tools
+
+Some optional extras that you might needs.
+
+##### PostgreSQL
+
+The easiest way to get started with PostgreSQL on the Mac is here: http://postgresapp.com/
