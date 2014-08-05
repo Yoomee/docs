@@ -4,15 +4,6 @@ An explanation of the main tools to setup a local Rails development environment 
 
 This setup is sometimes referred to as **conan** to distinguish it from the Rails 3 environments that used shared code called **tramlines**.
 
-## Engine Yard
-
-
-For your bashrc or zshrc:
-
-```
-export EYRC="./.eyrc"
-```
-
 ## Install XCode
 
 This is needed to install git, gcc and lots of other necessary
@@ -117,6 +108,22 @@ Thinking Sphinx is a concise and easy-to-use Ruby library that connects ActiveRe
 1. Download binaries from [here](https://gitlab.yoomee.com/yoomee/docs/raw/master/assets/binaries/sphinx_binaries.zip).
 2. Unzip and move to /usr/local/bin
 
+## Engine Yard
+
+Add the following lines to .bash_login to make RVM work:
+
+```
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+source ~/.bashrc
+```
+
+Add the following lines to .bash_rc to make Engine Yard work:
+
+```
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export EYRC="./.eyrc"
+```
+
 
 Congrats! You're done.
 
@@ -131,6 +138,10 @@ The easiest way to get started with PostgreSQL on the Mac is here: http://postgr
 ## Other local tools
 
 You might want some of these tools, or choose your own alternatives.
+
+##### Sequel Pro
+
+Use Sequel Pro for looking at your local MySQL database: http://www.sequelpro.com/
 
 ##### Atom Text Editor
 
