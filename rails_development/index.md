@@ -24,13 +24,15 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 Otherwise follow instructions at http://brew.sh/
 
+## Install dependencies
+
+Install these brew packages as they are dependencies for various dev tools and native gems further down the line:
+
+```
+brew install autoconf automake libtool pkg-config libyaml readline libxml2 libxslt libksba openssl qt
+```
+
 ## Install RVM
-
-The required brew packages *should* be installed automatically, but it wasn’t working for me. Run this first:
-
-```
-brew install autoconf automake libtool pkg-config libyaml readline libxml2 libxslt libksba openssl
-```
 
 Then install RVM:
 
