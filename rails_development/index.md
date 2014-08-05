@@ -1,0 +1,129 @@
+# Rails Development
+
+An explanation of the main tools to setup a local Rails development environment for Rails 4 with Yoomee Gems and Engine Yard hosting.
+
+This setup is sometimes referred to as **conan** to distinguish it from the Rails 3 environments that used shared code called **tramlines**.
+
+## Engine Yard
+
+
+For your bashrc or zshrc:
+
+```
+export EYRC="./.eyrc"
+```
+
+## Install XCode
+
+This is needed to install git, gcc and lots of other necessary
+libraries etc.
+
+1. Install from the Mac App Store.
+2. Once installed open XCode, go to Preferences > Downloads and install Command Line Tools. Or try this on Mavericks:
+
+```
+$ xcode-select --install
+```
+
+## Install Homebrew
+
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+Otherwise follow instructions at http://brew.sh/
+
+## Install RVM
+
+The required brew packages *should* be installed automatically, but it wasn’t working for me. Run this first:
+
+```
+brew install autoconf automake libtool pkg-config libyaml readline libxml2 libxslt libksba openssl
+```
+
+Then install RVM:
+
+```
+curl -L https://get.rvm.io | bash -s stable --ruby
+```
+
+Then use RVM to install some other shit:
+
+```
+rvm get head
+rvm autolibs enable
+```
+
+Now you can install some rubies. These are the ones that we use:
+
+```
+rvm install 1.8.7
+rvm install 1.9.2
+rvm install 1.9.3
+```
+
+We also need Ruby version 2.1.1 for newer projects:
+
+```
+rvm install ruby-2.1.1
+```
+
+If that complains, then try this:
+
+```
+rvm install ruby-2.1.1 --verify-downloads 1
+```
+
+You're almost done!
+
+## Install MySQL
+
+We use MySQL on Engine Yard, so install that now:
+
+```
+brew install mysql
+```
+
+```
+mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+```
+
+Add to launchctl
+
+```
+mkdir -p ~/Library/LaunchAgents
+```
+
+```
+cp /usr/local/Cellar/mysql/5.*/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/
+```
+
+```
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+```
+
+## Install ImageMagick
+
+We use ImageMagick to mess with images:
+
+```
+brew install imagemagick
+```
+
+Congrats! You're done.
+
+## Other tools
+
+You might want some of these tools, or choose your own alternatives.
+
+### Atom Text Editor
+
+Most of the dev team are using https://atom.io/ because David says so. It's very cool too.
+
+
+### Gitx
+
+It's recommended you use Gitx for managing git commits.
+
+1. Use _GitX-dev (rowanj fork)_ from http://rowanj.github.io/gitx/
+2. Enable Terminal Usage from the GitX application menu.
