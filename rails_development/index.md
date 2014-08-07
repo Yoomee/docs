@@ -131,7 +131,7 @@ Congrats! You're done.
 
 ## Other server tools
 
-Some optional extras that you will probably need one day, so you may as well install now.
+Some optional extras that you will probably need for other projects, so you may as well install now.
 
 ##### PostgreSQL
 
@@ -150,9 +150,13 @@ Use Sequel Pro for looking at your local MySQL database: http://www.sequelpro.co
 Most of the dev team are using https://atom.io/ because David says so. It's very cool too.
 
 
+##### GitHub
+
+Most people seem to be using [GitHub Mac](https://mac.github.com/) for managing git commits.
+
 ##### Gitx
 
-It's recommended you use Gitx for managing git commits.
+Some other people use Gitx for managing git commits.
 
 1. Use _GitX-dev (rowanj fork)_ from http://rowanj.github.io/gitx/
 2. Enable Terminal Usage from the GitX application menu.
