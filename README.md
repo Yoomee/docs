@@ -1,5 +1,9 @@
 # Documentation
 
+# General
+
+* [Gitlab](gitlab/index.md) – How to use Gitlab.
+
 # Ruby on Rails
 
 * [Learn](learn/rails.md) – Start here if you are new to Ruby and Rails.
