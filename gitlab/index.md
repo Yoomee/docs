@@ -6,7 +6,7 @@ We use our own Git respository on a server running GitLab Community Edition at h
 
 ### Setup
 
-Your colleagues should have created you an account. If you forgot the password then grab a new password [here](https://gitlab.yoomee.com/users/confirmation/new). When you are signed in, you will need to add your SSH keys in order to use Gitlab.
+Your colleagues should have created you an administrator account. If you forgot the password then grab a new password [here](https://gitlab.yoomee.com/users/confirmation/new). When you are signed in, you will need to add your SSH keys in order to use Gitlab.
 
 
 ### Add your SSH keys
@@ -48,6 +48,10 @@ Now that you have the key copied, it's time to add it into GitLab as follows:
 6. Paste your key into the "Key" field.
 7. Click on the "Add key" button
 
-## General Git Tips
+## Gitlab groups
+
+You will need to add yourself to the various groups of projects you are working on.
+
+## General tips
 
 There is a simple guide here http://git.huit.harvard.edu/guide/ otherwise Google is your friend.
