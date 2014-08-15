@@ -1,22 +1,32 @@
 # Rails Development
 
-An explanation of the main tools to setup a local Rails development environment for Rails 4 with Yoomee Gems and Engine Yard hosting.
+This is an explanation of how to setup a brand new local Rails development environment for Rails 4 with Yoomee Gems and Engine Yard hosting.
 
-This setup is sometimes referred to as **conan** to distinguish it from the Rails 3 environments that used shared code called **tramlines**.
+#### Assumptions
 
-## Install XCode
+This README assumes that you are installing on a brand new Mavericks  machine  with only one user account for development. If you have homebrew installed on other user accounts then you will probably hit problems.
+
+#### History
+
+This setup is sometimes referred to as **conan** to distinguish it from the Rails 3 environments that used shared Yoomee code called **tramlines**.
+
+## 1. Install XCode
 
 This is needed to install git, gcc and lots of other necessary
 libraries etc.
 
-1. Install from the Mac App Store.
+1. Install xCode from the Mac App Store.
 2. Once installed open XCode, go to Preferences > Downloads and install Command Line Tools. Or try this on Mavericks:
 
 ```
 $ xcode-select --install
 ```
 
-## Install Homebrew
+#### Note
+
+If you get the error message _"Can't install the software because it is not currently available from the Software Update server"_ then it's probably because you already have xCode installed and the command line tools installed. So just move on to install Homebrew.
+
+## 2. Install Homebrew
 
 ```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
@@ -24,7 +34,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 Otherwise follow instructions at http://brew.sh/
 
-## Install dependencies
+## 3. Install dependencies
 
 Install these brew packages as they are dependencies for various dev tools and native gems further down the line:
 
@@ -32,7 +42,7 @@ Install these brew packages as they are dependencies for various dev tools and n
 brew install autoconf automake libtool pkg-config libyaml readline libxml2 libxslt libksba openssl qt
 ```
 
-## Install RVM
+## 4. Install RVM
 
 Then install RVM:
 
@@ -69,7 +79,7 @@ rvm install ruby-2.1.1 --verify-downloads 1
 
 You're almost done!
 
-## Install MySQL
+## 5. Install MySQL
 
 We use MySQL on Engine Yard, so install that now:
 
@@ -95,7 +105,7 @@ cp /usr/local/Cellar/mysql/5.*/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/
 launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
-## Install ImageMagick
+## 6. Install ImageMagick
 
 We use ImageMagick to mess with images:
 
@@ -103,14 +113,14 @@ We use ImageMagick to mess with images:
 brew install imagemagick
 ```
 
-## Install Thinking Sphinx
+## 7. Install Thinking Sphinx
 
 Thinking Sphinx is a concise and easy-to-use Ruby library that connects ActiveRecord to the Sphinx search daemon, managing configuration and searching.
 
 1. Download binaries from [here](https://gitlab.yoomee.com/yoomee/docs/raw/master/assets/binaries/sphinx_binaries.zip).
 2. Unzip and move to /usr/local/bin
 
-## Engine Yard
+## 8. Engine Yard
 
 Add the following lines to .bash_login to make RVM work:
 

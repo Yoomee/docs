@@ -15,18 +15,17 @@ and is also what we are moving all our projects towards.
 Ruby is the basis of Rails! Understanding it will make you a better Rails
 developer.
 
- * Ruby Koans (https://github.com/neo/ruby_koans)
- * Agile Web Development With Rails (pdf in this folder - has a
-   great Ruby Chapter)
+ * Ruby Koans (https://github.com/neo/ruby_koans).
+ * Read the PDF book _"Agile Web Development With Rails"_ which you can download from [here](https://gitlab.yoomee.com/yoomee/docs/raw/master/learn/awdwr-internal-only-do-not-share.pdf) - it has a great chapter on Ruby.
 
 ## Learn Rails
 
-Start with the AWDWR book - it is a computer book classic, and gets you building
+Start with the _"Agile Web Development With Rails"_ book – it is a computer book classic, and gets you building
 a project straight away. There are a lot of services like Code School and Rails
-For Zombies online, these are great, but the books are better - more structured
+For Zombies online, these are great, but the books are better – more structured
 and more coverage.
 
- * Agile Web Development With Rails (pdf in this folder)
+ * _"Agile Web Development With Rails"_ book which you can download from [here](https://gitlab.yoomee.com/yoomee/docs/raw/master/learn/awdwr-internal-only-do-not-share.pdf).
  * Rails Tutorial is also a great resource, and free online:
    http://www.railstutorial.org/book
 
@@ -35,19 +34,19 @@ and more coverage.
 Rails code packages are called Gems.
 
 We have our own gems (beginning ym_*) and also make a lot of use of some others.
-Speak to the dev team, or look at the gem code on Github for more info.
+Speak to the dev team, or look at the gem code on the [Yoomee Gitlab](https://gitlab.yoomee.com/groups/yoomee) for more info.
 
 ## Testing
 
 Traditionally our test coverage and approach has been patchy.
 
-We have settled on using Cucumber for tests as a standard in our Rails app.
+We have settled on using [Cucumber](http://cukes.info/) for tests as a standard in our Rails app.
 Our approach to testing is to focus on story-based integration tests, rather
 than unit test every model and controller. As with everything we are completely
 open to change and suggestions (backed with code, of course!).
 
-A copy of The Cucumber Book.pdf is in this folder, and projects like NYA, and
-vInspired have better test coverage.
+A copy of The [Cucumber Book.pdf](https://gitlab.yoomee.com/yoomee/docs/raw/master/learn/The%20Cucumber%20Book.pdf) is in this folder, and projects like [NYA](https://gitlab.yoomee.com/nya/nya_rails4/tree/master), and
+[vInspired](https://gitlab.yoomee.com/vinspired/vwidget/tree/master) have better test coverage.
 
 ## Resources
 
@@ -63,4 +62,4 @@ will make more sense the more you learn.
 No question is silly, or to trivial. We have all been there learning new things
 and no how tough it can be. Always try and find out if you can answer your own
 question first, but also be free to ask questions personally or using #dev in
-Slack.
+[Slack](https://yoomee.slack.com/messages/dev/).
