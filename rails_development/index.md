@@ -146,6 +146,7 @@ Some optional extras that you will probably need for other projects, so you may 
 ##### PostgreSQL
 
 The easiest way to get started with PostgreSQL on the Mac is here: http://postgresapp.com/
+
 If PostgreSQL doesn't install correctly, you may need to run the following as this is the latest path for the config file
 
 ```
