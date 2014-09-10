@@ -17,3 +17,7 @@ Or https://support.cloud.engineyard.com/entries/50644293-Obtain-and-Install-SSL-
 We don't have an account login with Trustico - they just email the details.
 
 Make liberal use of ey support: https://www.engineyard.com/support/plans/standard
+
+# Sites with SSL and known last renewal dates
+
+ * tchc.org.uk: renewal made on 10/09/2014 for cert expiring on Nov.
