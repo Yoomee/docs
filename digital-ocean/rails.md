@@ -86,6 +86,8 @@ Boom no password!
 
 ## Add 1024MB swap file
 
+We need to add a swap file, especially to help the performance when we have less than 1Gb RAM.
+
 Before we proceed to set up a swap file, we need to check if any swap files have been enabled on the VPS by looking at the summary of swap usage.
 
 ```
