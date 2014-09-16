@@ -14,3 +14,4 @@
 * [Gandalf](gandalf/index.md) – All about the server running GitLab, gem server etc.
 * [Heroku](heroku/index.md) – How to set up apps on Heroku.
 * [Engine Yard SSL](engine-yard/ssl.md) - Engine Yard SSL installation
+* [Digital Ocean](digital-ocean/rails.md) - Setting up Ruby and Rails on Digital Ocean
