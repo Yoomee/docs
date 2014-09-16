@@ -1,6 +1,8 @@
 # Digital Ocean
 
-This README explains how to setup a cloud server on Digital Ocean. Please follow all the steps until it explicitly says optional.
+This README explains how to setup a cloud server on Digital Ocean that uses Ruby on Rails, Postgress and Capistrano.
+
+Please follow all the steps below in order.
 
 ## Create Droplet
 
