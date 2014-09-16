@@ -176,10 +176,17 @@ $ rvmsudo /usr/bin/apt-get install build-essential openssl libreadline6 libreadl
 
 ## Install Ruby
 
+Install the Rubys that you want:
+
 ```
 $ rvm install 1.9.3
-$ rvm use 1.9.3 default
 $ rvm install 2.1.1
+```
+
+Pick which one you will use for defaul, and which one you want your app to use:
+
+```
+$ rvm --default use 2.1.1
 ```
 
 ## Install RubyGems
@@ -210,6 +217,12 @@ $ sudo apt-get install ruby-railties-4.0
 
 Passenger is an effective and easy way to deploy Rails on nginx.
 
+First make sure that you are using the version of Ruby that your app needs:
+
+```
+$ rvm --default use 2.1.1
+```
+
 Install as follows:
 
 ```
@@ -219,7 +232,7 @@ $ gem install passenger
 Also install Curl development headers with SSL support:
 
 ```
-$ apt-get install libcurl4-openssl-dev
+$ sudo apt-get install libcurl4-openssl-dev
 ```
 
 ## Install nginx
@@ -246,6 +259,27 @@ This will install nginx to /opt/nginx
 Passenger will take about five to ten minutes to install, configure, and optimize nginx with Ruby on Rails.
 
 After it finishes, it will let you know about changes made to the nginx configuration file and how to deploy a Ruby on Rails application on your virtual server.
+
+### Check the Ruby version
+
+Open your Nginx configuration file:
+
+```
+$ sudo vi /opt/nginx/conf/nginx.conf
+```
+
+And make sure the passenger_root and passenger_ruby configuration options in the
+'http' block, reflect your ruby version like this:
+
+```
+  http {
+      ...
+      passenger_root /home/deploy/.rvm/gems/ruby-2.1.1/gems/passenger-4.0.50;
+      passenger_ruby /home/deploy/.rvm/gems/ruby-2.1.1/wrappers/ruby;
+      ...
+  }
+```  
+
 
 ### Create nginx startup scripts
 
