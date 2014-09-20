@@ -150,6 +150,16 @@ $ sudo chown root:root /swap
 $ sudo chmod 0600 /swap
 ```
 
+##  Change timezone
+
+We need to make sure the server timezone is London and not the US default.
+
+```
+sudo dpkg-reconfigure tzdata
+```
+And then select _Europe_ -> _London_.
+
+
 ## Install  RVM
 
 
