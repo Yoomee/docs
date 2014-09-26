@@ -26,6 +26,7 @@ Add the resulting vendor/cache directory to Git
 
 ```
 git add vendor/cache
+git commit -m "Updated vendor cache"
 ```
 
 If you are using Heroku to host a staging environment you may wish to use push a branch other than master
