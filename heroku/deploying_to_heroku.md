@@ -1,4 +1,13 @@
-# Deploying an application to Heroku
+# Deploying an existing application to Heroku
+
+#### Clone project
+
+First clone the project from Gitlab and enter the directory.
+
+```
+git clone git@gitlab.yoomee.com:appname/appname.git
+cd appname
+```
 
 #### Add Heroku gems
 
@@ -9,7 +18,7 @@ Add 'gem rails_12factor' to the Gemfile and bundle
 #### Create a new Heroku application
 
 ```
-heroku create <appname>
+$ heroku create <appname>
 ```
 
 
