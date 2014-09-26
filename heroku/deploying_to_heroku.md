@@ -17,4 +17,17 @@ Add the resulting vendor/cache directory to Git
 If you are using Heroku to host a staging environment you may wish to use push a branch other than master
   ```git push heroku <branch-name>:master```
 
+####Gotcha
 
+If you get this error message:
+
+```
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+```
+
+Then add a remote as follows:
+
+```
+git remote add heroku git@heroku.com:girlguiding-staging.git
+```
