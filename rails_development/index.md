@@ -150,29 +150,27 @@ The easiest way to get started with PostgreSQL on the Mac is here: http://postgr
 If PostgreSQL doesn't install correctly, you may need to run the following as this is the latest path for the config file
 
 ```
-gem install pg -v '0.17.1' -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config 
+gem install pg -v '0.17.1' -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config
 ```
 
 ## Other local tools
 
 You might want some of these tools, or choose your own alternatives.
 
-##### Sequel Pro
+#### Sequel Pro
 
 Use Sequel Pro for looking at your local MySQL database: http://www.sequelpro.com/
 
-##### Atom Text Editor
+#### Atom Text Editor
 
 Most of the dev team are using https://atom.io/ because David says so. It's very cool too.
 
+Don't forget to enable the command line:
+__Atom -> Install Shell Commands__
 
-##### GitHub
+#### GitHub
 
 Most people seem to be using [GitHub Mac](https://mac.github.com/) for managing git commits.
 
-##### Gitx
-
-Some other people use Gitx for managing git commits.
-
-1. Use _GitX-dev (rowanj fork)_ from http://rowanj.github.io/gitx/
-2. Enable Terminal Usage from the GitX application menu.
+Don't forget to enable the command line:
+__Preferences -> Advanced -> Install Command Line Tools__
