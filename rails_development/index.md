@@ -60,8 +60,6 @@ rvm autolibs enable
 Now you can install some rubies. These are the ones that we use:
 
 ```
-rvm install 1.8.7
-rvm install 1.9.2
 rvm install 1.9.3
 ```
 
