@@ -134,6 +134,13 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export EYRC="./.eyrc"
 ```
 
+## 9. Gitlab access key
+
+Add the following lines to .bash_rc to make sure you can access the Yoomee Gitlab:
+
+```
+export GITLAB_AUTH_TOKEN="LuYWriTWj8zHKjGwqgfmo9xqQHuXeVLE"
+```
 
 Congrats! You're done.
 
